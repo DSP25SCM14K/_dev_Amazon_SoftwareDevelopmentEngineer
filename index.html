@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Dev Kumar - Software Development Engineer portfolio for distributed systems, AWS cloud architecture, C++/Java/Python, AI/ML inference, video streaming, observability, and performance optimization."
+    />
+    <title>Dev Kumar | Amazon Software Development Engineer</title>
+    <link rel="preload" href="./assets/aws-scale-sde-hero.png" as="image" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <canvas id="systems-canvas" aria-hidden="true"></canvas>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Dev Kumar home">
+        <span class="brand-mark">DK</span>
+        <span>Dev Kumar</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#builder-loop">Builder Loop</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-media" aria-hidden="true">
+          <img src="./assets/aws-scale-sde-hero.png" alt="" />
+          <div class="scan-layer"></div>
+        </div>
+
+        <div class="hero-content reveal">
+          <p class="eyebrow">Software Development Engineer - Distributed Systems, AI/ML, AWS</p>
+          <h1>Systems built where latency, scale, and ownership all matter.</h1>
+          <p class="hero-copy">
+            I build multi-threaded services, cloud-native platforms, AI inference pipelines, and streaming systems
+            with a habit of profiling the hot path, simplifying interfaces, and leaving production healthier than I found it.
+          </p>
+
+          <div class="dynamic-line" aria-live="polite">
+            <span class="line-label">Currently optimizing</span>
+            <span id="dynamic-text"></span>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-secondary" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button button-secondary" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+          </div>
+        </div>
+
+        <div class="hero-metrics reveal" aria-label="Selected engineering impact">
+          <article>
+            <span class="metric-value" data-count="99.99">0</span>
+            <span class="metric-suffix">%</span>
+            <span class="metric-label">uptime across distributed systems</span>
+          </article>
+          <article>
+            <span class="metric-value" data-count="500">0</span>
+            <span class="metric-suffix">K+</span>
+            <span class="metric-label">monthly backend requests</span>
+          </article>
+          <article>
+            <span class="metric-value" data-count="55">0</span>
+            <span class="metric-suffix">%</span>
+            <span class="metric-label">media delivery latency reduction</span>
+          </article>
+          <article>
+            <span class="metric-value" data-count="5">0</span>
+            <span class="metric-suffix">us</span>
+            <span class="metric-label">tick-to-book latency target</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section builder-section reveal" id="builder-loop">
+        <div class="section-heading">
+          <p class="eyebrow">Builder Loop</p>
+          <h2>Start from the customer path, dive into the bottleneck, simplify the interface, and measure the result.</h2>
+        </div>
+
+        <div class="principle-grid">
+          <article class="principle-card">
+            <span class="card-index">01</span>
+            <h3>Design for load</h3>
+            <p>Multi-tier services, partitioned queues, cache-aware data structures, and scalable AWS/Azure deployments keep systems stable under real traffic.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">02</span>
+            <h3>Profile the path</h3>
+            <p>Tracing, p95/p99 analysis, dynamic batching, KV-cache reuse, and lock-free queues turn performance work into concrete latency wins.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">03</span>
+            <h3>Build resiliently</h3>
+            <p>Idempotency, retries, timeouts, telemetry, and operational playbooks keep distributed services predictable when partial failures appear.</p>
+          </article>
+          <article class="principle-card">
+            <span class="card-index">04</span>
+            <h3>Raise standards</h3>
+            <p>Architecture reviews, pull-request coaching, design patterns, and mentoring make teams faster without letting quality quietly drift.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section diagram-section reveal" aria-labelledby="diagram-title">
+        <div class="section-heading">
+          <p class="eyebrow">Architecture Diagram</p>
+          <h2 id="diagram-title">A production path from edge traffic to service orchestration, ML inference, streaming, storage, and observability.</h2>
+        </div>
+
+        <div class="diagram-shell">
+          <svg class="architecture-diagram" viewBox="0 0 1160 620" role="img" aria-labelledby="svg-title svg-desc">
+            <title id="svg-title">Cloud-scale SDE architecture</title>
+            <desc id="svg-desc">Traffic flows through an edge layer, API services, queues, ML inference workers, streaming/CDN delivery, storage, caching, and telemetry.</desc>
+            <defs>
+              <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#38bdf8" />
+                <stop offset="34%" stop-color="#2dd4bf" />
+                <stop offset="66%" stop-color="#f59e0b" />
+                <stop offset="100%" stop-color="#a855f7" />
+              </linearGradient>
+              <filter id="softGlow">
+                <feGaussianBlur stdDeviation="4" result="blur" />
+                <feMerge>
+                  <feMergeNode in="blur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <g class="diagram-grid">
+              <path d="M56 90H1104M56 210H1104M56 330H1104M56 450H1104M56 570H1104" />
+              <path d="M154 48V574M328 48V574M502 48V574M676 48V574M850 48V574M1024 48V574" />
+            </g>
+
+            <g class="diagram-node node-input">
+              <rect x="56" y="222" width="194" height="150" rx="12" />
+              <text x="153" y="268">Edge Traffic</text>
+              <text x="153" y="306">CDN</text>
+              <text x="153" y="338">auth / limits</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="306" y="72" width="222" height="136" rx="12" />
+              <text x="417" y="118">API Services</text>
+              <text x="417" y="156">Java / Python</text>
+              <text x="417" y="186">gRPC / REST</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="306" y="414" width="222" height="136" rx="12" />
+              <text x="417" y="460">Streaming</text>
+              <text x="417" y="496">HLS / DASH</text>
+              <text x="417" y="526">edge cache</text>
+            </g>
+
+            <g class="diagram-node node-core">
+              <rect x="596" y="178" width="270" height="204" rx="14" />
+              <text x="731" y="228">Orchestration Core</text>
+              <text x="731" y="270">queues</text>
+              <text x="731" y="310">dynamic batch</text>
+              <text x="731" y="350">idempotency</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="918" y="52" width="190" height="126" rx="12" />
+              <text x="1013" y="96">ML Inference</text>
+              <text x="1013" y="132">PyTorch</text>
+              <text x="1013" y="162">KV cache</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="918" y="238" width="190" height="126" rx="12" />
+              <text x="1013" y="282">Data Plane</text>
+              <text x="1013" y="318">S3 / Redis</text>
+              <text x="1013" y="348">metadata</text>
+            </g>
+
+            <g class="diagram-node">
+              <rect x="918" y="424" width="190" height="126" rx="12" />
+              <text x="1013" y="468">Operations</text>
+              <text x="1013" y="504">traces</text>
+              <text x="1013" y="534">p95 / p99</text>
+            </g>
+
+            <g class="flow-lines">
+              <path d="M250 296 C278 296 276 140 306 140" />
+              <path d="M250 306 C280 306 276 482 306 482" />
+              <path d="M528 140 C592 140 566 256 596 256" />
+              <path d="M528 482 C592 482 566 338 596 338" />
+              <path d="M866 248 C900 248 884 116 918 116" />
+              <path d="M866 294 C900 294 884 302 918 302" />
+              <path d="M866 338 C900 338 884 488 918 488" />
+              <path d="M1013 424 C1013 398 1013 390 1013 364" />
+              <path d="M1013 238 C1013 212 1013 204 1013 178" />
+            </g>
+
+            <g class="diagram-pulses">
+              <circle cx="250" cy="296" r="7" />
+              <circle cx="528" cy="140" r="7" />
+              <circle cx="596" cy="338" r="7" />
+              <circle cx="866" cy="294" r="7" />
+              <circle cx="1013" cy="488" r="7" />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section class="section skills-section reveal">
+        <div class="section-heading">
+          <p class="eyebrow">Technical Range</p>
+          <h2>Hands-on across distributed systems, AWS cloud, multi-threaded C++, AI/ML inference, streaming media, and operational telemetry.</h2>
+        </div>
+
+        <div class="skill-cloud" aria-label="Key skills">
+          <span>C++ 11/14/17/20</span>
+          <span>Java</span>
+          <span>Python</span>
+          <span>Go</span>
+          <span>TypeScript</span>
+          <span>AWS Lambda</span>
+          <span>ECS</span>
+          <span>EKS</span>
+          <span>S3</span>
+          <span>CloudFront</span>
+          <span>Kafka</span>
+          <span>gRPC</span>
+          <span>REST</span>
+          <span>PyTorch</span>
+          <span>JAX</span>
+          <span>vLLM</span>
+          <span>TensorRT</span>
+          <span>LangChain</span>
+          <span>MCP</span>
+          <span>FFmpeg</span>
+          <span>HLS / DASH</span>
+          <span>OpenTelemetry</span>
+          <span>Prometheus</span>
+          <span>Linux Internals</span>
+          <span>Lock-free Queues</span>
+        </div>
+      </section>
+
+      <section class="section experience-section reveal" id="experience">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Engineering work across agent systems, ML inference, high-scale backends, streaming infrastructure, and team leadership.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span>Mar 2025 - Present</span>
+              <strong>Sprouts AI</strong>
+            </div>
+            <div class="timeline-card">
+              <h3>Software Development Engineer</h3>
+              <p>Chicago, IL</p>
+              <ul>
+                <li>Designed and built a distributed multi-agent orchestration platform in Python (FastAPI) implementing complex software solutions across coordinator, job-analysis, candidate-ranking, and scheduling agents - cutting end-to-end task latency 40% via async tool-call batching and shared-memory context caching.</li>
+                <li>Engineered LLM inference pipelines on PyTorch and transformer architectures applying optimization techniques (KV-cache reuse, dynamic batching, quantization) to reduce p95 latency from 1.4s to 800ms across 1K+ daily invocations while sustaining 99.9% uptime.</li>
+                <li>Led architecture and design reviews for an MCP (Model Context Protocol) server exposing JSON-RPC tools - eliminated duplicate-call bugs via idempotency keys, separated state-changing tools from side-effect-free reads, and mentored 3 junior engineers through implementation and code review.</li>
+                <li>Deployed multi-tiered agent services on AWS and Azure with environment-specific config, CI/CD (GitHub Actions), and OpenTelemetry distributed tracing - collaborating cross-functionally with product and ML teams to ship recommendation features that boosted match accuracy 35%.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span>Aug 2023 - Mar 2025</span>
+              <strong>Resilience Inc</strong>
+            </div>
+            <div class="timeline-card">
+              <h3>Software Development Engineer</h3>
+              <p>Chicago, IL</p>
+              <ul>
+                <li>Designed and maintained large-scale Python and Node.js backend services on AWS and Azure (Lambda, Container Apps, Functions) processing 500K+ monthly requests via multi-threaded request handling, design-pattern-driven service architecture, and reliability/scaling reviews.</li>
+                <li>Built recommendation services using PyTorch embedding models and feature engineering over learner-engagement signals - applying ranking and ML optimization techniques to surface contextually relevant content at sub-200ms p95 latency.</li>
+                <li>Implemented Redis-backed multi-tiered caching and event-driven processing for high-throughput access patterns; identified and resolved performance bottlenecks via profiling and tracing, and reviewed pull requests with constructive feedback across two product teams.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <span>Apr 2018 - Aug 2023</span>
+              <strong>Tata Steel</strong>
+            </div>
+            <div class="timeline-card">
+              <h3>Software Development Engineer</h3>
+              <ul>
+                <li>Architected distributed, multi-tiered microservices in Java, Python, and Go on Kubernetes - applying design patterns, scalability, and reliability engineering to achieve 99.99% uptime and 40% faster API response times for 40K+ users.</li>
+                <li>Built video processing and streaming infrastructure using FFmpeg, H.264/H.265 encoding, and HLS/DASH delivery with CDN-style edge caching - cutting media delivery latency 55% across 30+ regional sites.</li>
+                <li>Mentored a 12-engineer team through full SDLC, ran architecture and design reviews, and drove engineering-culture improvements (code-review standards, on-call playbooks) that cut production incidents 50% year-over-year.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section reveal" id="projects">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2>Source and demos across low-latency C++, operating systems, agentic AI, streaming data, cloud apps, research, and product engineering.</h2>
+        </div>
+
+        <div class="project-toolbar" role="list" aria-label="Project filters">
+          <button class="filter-button is-active" type="button" data-filter="all">All</button>
+          <button class="filter-button" type="button" data-filter="systems">Systems</button>
+          <button class="filter-button" type="button" data-filter="cloud">Cloud</button>
+          <button class="filter-button" type="button" data-filter="ai">AI</button>
+          <button class="filter-button" type="button" data-filter="web">Web</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-tags="systems cloud">
+            <div class="project-topline"><span>Low Latency</span><strong>C++17</strong></div>
+            <h3>CME MDP 3.0 Multicast Feed Handler</h3>
+            <p>Multi-threaded C++ feed handler parsing multicast UDP, reconstructing order books, decoding SBE, and targeting sub-5 microsecond tick-to-book latency.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/CME-Multicast-Market-Data-Feed-Handler-C-" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="systems">
+            <div class="project-topline"><span>Operating Systems</span><strong>C</strong></div>
+            <h3>Experimental Operating System</h3>
+            <p>Educational OS implementation covering scheduler, memory management, syscall layer, filesystem, and infrastructure-level reasoning.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/EXPOS" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="ai cloud web">
+            <div class="project-topline"><span>Agentic RAG</span><strong>Live</strong></div>
+            <h3>AskMyStore</h3>
+            <p>End-to-end RAG application with vector embeddings, semantic retrieval, grounded LLM Q&amp;A, and deployed product experience.</p>
+            <div class="project-links">
+              <a href="https://askmystore.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+              <a href="https://github.com/devthedevil/AskMyStore" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="cloud systems data">
+            <div class="project-topline"><span>Streaming Data</span><strong>Kafka</strong></div>
+            <h3>Real-time Stock Market Analysis Pipeline</h3>
+            <p>Python Kafka pipeline for high-throughput market data ingest, partition scaling, event-driven aggregation, and low-latency analytics.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Realtime-Stock-Market-Analysis" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="ai cloud web">
+            <div class="project-topline"><span>Tool Use</span><strong>LangChain</strong></div>
+            <h3>LangChain Chat with Search</h3>
+            <p>Agentic workflow project with tool orchestration, search integration, planning loops, and AI-first service patterns.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/LangChain-Chat-with-Search" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="systems security">
+            <div class="project-topline"><span>Kernel Module</span><strong>Linux</strong></div>
+            <h3>Character Device Driver</h3>
+            <p>C-based Linux driver project showing kernel interfaces, hardware-token style authentication paths, and security-adjacent systems engineering.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Character-Device-Driver" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="systems">
+            <div class="project-topline"><span>Processor Design</span><strong>RISC</strong></div>
+            <h3>16-Bit RISC Processor</h3>
+            <p>Hardware lab project with architecture fundamentals, instruction-level reasoning, Verilog foundations, and system design below the API surface.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Hardware-lab" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="web cloud">
+            <div class="project-topline"><span>Product App</span><strong>Live</strong></div>
+            <h3>TradeSentinel</h3>
+            <p>Production TypeScript web app with deployed UX, backend integration patterns, and product-minded iteration from source to demo.</p>
+            <div class="project-links">
+              <a href="https://tradesentinel.vercel.app/" target="_blank" rel="noreferrer">Demo</a>
+              <a href="https://github.com/devthedevil/tradesentinel" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="web">
+            <div class="project-topline"><span>Full Stack</span><strong>MERN</strong></div>
+            <h3>STRANGERS</h3>
+            <p>Responsive full-stack social platform with user flows, JavaScript interactions, forms, and practical web application delivery.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Strangers" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="data ai">
+            <div class="project-topline"><span>IEEE Research</span><strong>Models</strong></div>
+            <h3>Comparative Study of Movie Recommendation Systems</h3>
+            <p>Published research on collaborative, content-based, and hybrid recommendation models with feature engineering and improved error functions.</p>
+            <div class="project-links">
+              <a href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Paper</a>
+              <a href="https://github.com/devthedevil/Comparative-Study-of-Movie-Recommendation-System/blob/main/Netflix_Movie.ipynb" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="web">
+            <div class="project-topline"><span>iOS App</span><strong>Swift</strong></div>
+            <h3>Pitch Perfect</h3>
+            <p>Mobile app project showing audio interaction, product UI thinking, and clean implementation across a focused user workflow.</p>
+            <div class="project-links">
+              <a href="https://github.com/devthedevil/Pitch_Perfect" target="_blank" rel="noreferrer">Source</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section credentials-section reveal">
+        <div class="credential-panel">
+          <article>
+            <span class="eyebrow">Education</span>
+            <h2>Illinois Institute of Technology</h2>
+            <p>M.S., Computer Science</p>
+            <h2>NIT Calicut</h2>
+            <p>B.Tech, Computer Science</p>
+          </article>
+          <article>
+            <span class="eyebrow">Publication</span>
+            <h2>IEEE Recommendation Systems Paper</h2>
+            <p>Feature engineering and improved error functions across collaborative, content-based, and hybrid recommendation models.</p>
+            <a class="inline-link" href="https://ieeexplore.ieee.org/document/10094480" target="_blank" rel="noreferrer">Read paper</a>
+          </article>
+          <article>
+            <span class="eyebrow">Credential</span>
+            <h2>Professional Certificate</h2>
+            <p>Additional certification evidence for applied engineering growth and delivery.</p>
+            <a class="inline-link" href="https://drive.google.com/file/d/1rayr6Cht6quyLUJOXWOAcBi_rxQp2Ol0/view" target="_blank" rel="noreferrer">View certificate</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section reveal" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Ready to build durable systems, improve latency, and keep production behavior understandable.</h2>
+          <p>
+            I bring distributed systems depth, AI/ML infrastructure range, low-level systems curiosity, and a steady habit of measuring what matters.
+          </p>
+        </div>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:devkumar.dklv@gmail.com">Email</a>
+          <a class="button button-secondary" href="tel:+13125328223">Call</a>
+          <a class="button button-secondary" href="https://github.com/devthedevil" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button button-secondary" href="https://leetcode.com/u/dev_kumar_dklv/" target="_blank" rel="noreferrer">LeetCode</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Designed and built for Dev Kumar - distributed systems, AWS cloud, AI/ML inference, streaming, observability, and performance engineering.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
