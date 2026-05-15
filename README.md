@@ -1,4 +1,4 @@
-# Dev Kumar - Amazon Software Development Engineer Portfolio
+# Dev Kumar - Software Engineering Portfolio
 
 Static dark-theme portfolio website built from `_dev_Amazon_SoftwareDevelopmentEngineer.docx`.
 
